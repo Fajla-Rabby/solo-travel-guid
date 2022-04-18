@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Italy Beach Tour",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://www.w3schools.com/css/img_5terre.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Aurora",
+        "price": "100",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://www.w3schools.com/css/img_lights.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Lake View",
+        "price": "150",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://www.w3schools.com/css/img_mountains.jpg"
+    }
+]
