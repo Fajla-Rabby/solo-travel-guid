@@ -14,7 +14,10 @@ const Register = () => {
       ] = useCreateUserWithEmailAndPassword(auth);
       const navigate = useNavigate();
 
-
+      if(user)
+      {
+          navigate('/login'); 
+      }
 
       const handleRegister = async (event) => {
         event.preventDefault();
