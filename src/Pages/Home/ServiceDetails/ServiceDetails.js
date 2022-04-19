@@ -1,6 +1,6 @@
 import React from 'react';
 
-const serviceDetails = () => {
+const ServiceDetails = () => {
     return (
         <div>
             <h2>this is service details</h2>
@@ -8,4 +8,4 @@ const serviceDetails = () => {
     );
 };
 
-export default serviceDetails;
+export default ServiceDetails;
