@@ -32,6 +32,20 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
 
+    const resetPassword = async() =>
+    {
+        const email = emailRef.current.value;
+       if(email)
+       {
+        await sendPasswordResetEmail(email);
+        toast('Sent email');
+       }
+       else
+       {
+           toast('please enter your email address');
+       }
+    }
+
     return (
         <div className='container w-50 mx-auto'>
             <h2 className='text-success text-center mt-2'>Please login</h2>
@@ -49,6 +63,8 @@ const Login = () => {
                     Login
                 </Button>
             </Form>
+
+            <p>Forgate password? <button  className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset password</button></p>
 
             <p>New here? <Link to='/register' className='text-success pe-auto text-decoration-none' >Please Register</Link></p>
             <SocialLogin></SocialLogin>
