@@ -1,9 +1,13 @@
+import { sendPasswordResetEmail } from 'firebase/auth';
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Login = () => {
     const emailRef = useRef('');
@@ -64,11 +68,11 @@ const Login = () => {
                 </Button>
             </Form>
 
-            <p>Forgate password? <button  className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset password</button></p>
+            <p>Forgate password? <button  className='btn btn-link text-success pe-auto text-decoration-none' onClick={resetPassword}>Reset password</button></p>
 
             <p>New here? <Link to='/register' className='text-success pe-auto text-decoration-none' >Please Register</Link></p>
             <SocialLogin></SocialLogin>
-
+            <ToastContainer />
         </div>
     );
 };
